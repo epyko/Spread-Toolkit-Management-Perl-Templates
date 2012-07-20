@@ -1,0 +1,18 @@
+Spread-Toolkit-Management-Perl-Templates
+
+Perl script templates for managing spread toolkit by automatically
+
+* NEEDS
+
+. Binaries
+
+Spread Toolkit 4.2.0
+
+. Perl Modules:
+
+Spread
+Spread::Messaging::Content
+Spread::Messaging::Exception
+File:Tail
+Time::Local
+Event

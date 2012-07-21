@@ -16,3 +16,27 @@ Spread::Messaging::Exception
 File:Tail
 Time::Local
 Event
+
+. Setup
+
+Spread module
+cd /usr/src
+wget http://search.cpan.org/CPAN/authors/id/J/JE/JESUS/Spread-3.17.4.4.tar.gz
+tar -zxvf Spread-3.17.4.4.tar.gz
+cd Spread-3.17.4.4/
+vi Makefile.PL 
+change this for this
+#$SPLIB_LIB = $ENV{'SPLIB_LIB'} || '-L../.. -L../spread-src-3.17.0/' ;
+#$SPLIB_INCLUDE = $ENV{'SPLIB_INCLUDE'} || '-I ../.. -I ../spread-src-3.17.0/' ;
+
+$SPLIB_LIB ='-L/usr/local/spread-4.2.0//lib/' ;
+$SPLIB_INCLUDE ='-I /usr/local/spread-4.2.0/include/' ;
+perl Makefile.PL
+make && make install
+ vi /etc/ld.so.conf
+add next line
+/usr/local/spread-3.17.4.4
+ldconfig
+cpan[2]> install Spread::Messaging::Content
+cpan[2]> install Spread::Messaging::Exception
+cpan[2]> install Event

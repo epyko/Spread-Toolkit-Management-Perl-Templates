@@ -10,6 +10,15 @@ Perl script templates for managing spread toolkit automatically on event log
 
 Spread Toolkit 4.2.0 (http://www.spread.org/download/spread-src-4.2.0.tar.gz)
 
+# cp ThirdParty/spread-src-4.2.0.tar /usr/src
+# cd /usr/src
+# tar -zxvf spread-src-4.2.0.tar 
+# cd spread-src-4.2.0
+# mkdir /usr/local/spread-4.2.0
+# ./configure --prefix=/usr/local/spread-4.2.0
+#  make
+#  make install
+
 . Perl Modules:
 
 Spread

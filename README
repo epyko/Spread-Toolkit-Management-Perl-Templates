@@ -2,9 +2,9 @@ In progess . . . . .
 
 Spread-Toolkit-Management-Perl-Templates
 
- [Sender Template](https://github.com/epyko/Spread-Toolkit-Management-Perl-Templates/blob/develop/scripts/receivers/receiver.sample.pl)
+ [Sender Template]: https://github.com/epyko/Spread-Toolkit-Management-Perl-Templates/blob/develop/scripts/receivers/receiver.sample.pl
 
- [Receiver Template](https://github.com/epyko/Spread-Toolkit-Management-Perl-Templates/blob/develop/scripts/receivers/receiver.sample.pl)
+ [Receiver Template]: https://github.com/epyko/Spread-Toolkit-Management-Perl-Templates/blob/develop/scripts/receivers/receiver.sample.pl
 
 Perl script templates for managing spread toolkit automatically on event log
 

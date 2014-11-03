@@ -2,7 +2,9 @@ In progess . . . . .
 
 Spread-Toolkit-Management-Perl-Templates
 
-[Sender Template] (scripts/receivers/receiver.sample.pl)
+[Sender Template] (../scripts/receivers/receiver.sample.pl)
+
+[Receiver Template] (../scripts/receivers/receiver.sample.pl)
 
 Perl script templates for managing spread toolkit automatically on event log
 

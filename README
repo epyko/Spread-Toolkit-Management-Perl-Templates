@@ -1,13 +1,14 @@
-Spread-Toolkit-Management-Perl-Templates
+# Spread-Toolkit-Management-Perl-Templates
 
-[**Sender_Template:**](https://github.com/epyko/Spread-Toolkit-Management-Perl-Templates/blob/master/scripts/senders/sender.sample.pl) Sender sample
+[Sender　Template](https://github.com/epyko/Spread-Toolkit-Management-Perl-Templates/blob/master/scripts/senders/sender.sample.pl) Sender sample
 
-[**Receiver_Template:**](https://github.com/epyko/Spread-Toolkit-Management-Perl-Templates/blob/master/scripts/receivers/receiver.sample.pl) Receiver sample
+[Receiver　Template:](https://github.com/epyko/Spread-Toolkit-Management-Perl-Templates/blob/master/scripts/receivers/receiver.sample.pl) Receiver sample
 
 Perl script templates for managing spread toolkit automatically on event log
 
-* NEEDS
+## NEEDS
 
+```
 # cp ThirdParty/spread-src-4.2.0.tar /usr/src
 # cd /usr/src
 # tar -zxvf spread-src-4.2.0.tar 
@@ -16,48 +17,59 @@ Perl script templates for managing spread toolkit automatically on event log
 # ./configure --prefix=/usr/local/spread-4.2.0
 #  make
 #  make install
+```
 
-. Perl Modules:
+### Perl Modules:
 
-Spread
-Spread::Messaging::Content
-Spread::Messaging::Exception
-File:Tail
-Time::Local
-Event
+1. Spread
+2. Spread::Messaging::Content
+3. Spread::Messaging::Exception
+4. File:Tail
+5. Time::Local
+6. Event
 
-. Setup
+### Setup
 
-Spread module
+#### Spread module
 
-#cd /usr/src
+```
+# cd /usr/src
 # wget http://search.cpan.org/CPAN/authors/id/J/JE/JESUS/Spread-3.17.4.4.tar.gz
 # tar -zxvf Spread-3.17.4.4.tar.gz
 # cd Spread-3.17.4.4/
 # vi Makefile.PL 
+```
 
-change this 
+#### change this 
 
+```
 $SPLIB_LIB = $ENV{'SPLIB_LIB'} || '-L../.. -L../spread-src-3.17.0/' ;
 $SPLIB_INCLUDE = $ENV{'SPLIB_INCLUDE'} || '-I ../.. -I ../spread-src-3.17.0/' ;
+```
 
-for this 
+#### for this 
 
+```
 $SPLIB_LIB ='-L/usr/local/spread-4.2.0//lib/' ;
 $SPLIB_INCLUDE ='-I /usr/local/spread-4.2.0/include/' ;
+```
 
+```
 # perl Makefile.PL
 # make && make install
-#vi /etc/ld.so.conf
+# vi /etc/ld.so.conf
+```
 
-add next line
+#### add next line
 
-/usr/local/spread-3.17.4.4
+```
+# /usr/local/spread-3.17.4.4
 
-#ldconfig
+# ldconfig
 
 #perl -eshell -MCPAN
 
 cpan[1]> install Spread::Messaging::Content
 cpan[2]> install Spread::Messaging::Exception
 cpan[3]> install Event
+```

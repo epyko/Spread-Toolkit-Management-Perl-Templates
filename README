@@ -1,8 +1,8 @@
 # Spread-Toolkit-Management-Perl-Templates
 
-[Sender　Template](https://github.com/epyko/Spread-Toolkit-Management-Perl-Templates/blob/master/scripts/senders/sender.sample.pl) Sender sample
+[Sender　Template](https://github.com/epyko/Spread-Toolkit-Management-Perl-Templates/blob/master/scripts/senders/sender.sample.pl)
 
-[Receiver　Template:](https://github.com/epyko/Spread-Toolkit-Management-Perl-Templates/blob/master/scripts/receivers/receiver.sample.pl) Receiver sample
+[Receiver　Template](https://github.com/epyko/Spread-Toolkit-Management-Perl-Templates/blob/master/scripts/receivers/receiver.sample.pl)
 
 Perl script templates for managing spread toolkit automatically on event log
 
